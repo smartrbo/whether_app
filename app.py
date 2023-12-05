@@ -17,6 +17,7 @@ def get_whetherdata():
     }
     response=requests.get(url,params=param)
     data=response.json()
+    city=data['name']
     return f"data :{data} , city : {city}"
 
 
